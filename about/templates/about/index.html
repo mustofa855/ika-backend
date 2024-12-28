@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ judul }}</title>
+</head>
+<body>
+    <!-- Perbaiki path untuk file statis -->
+    <img style="width: 1500px; height: 300px;" src="{% static 'about/img/about.jpg' %}" alt="Home">
+
+    <h1>{{ subJudul }} di website kami {{ judul }}</h1>
+    <p>Web ini dibuat dengan menggunakan Django</p>
+    <h2>Kontributor: {{ kontributor }}</h2>
+    <h5>Ini pake template tags (bukan pake HTML biasa)</h5>
+
+    <!-- Daftar navigasi menggunakan template tags -->
+    <!-- <ul>
+        {% for item in nav %}
+            <li>
+                <a href="{{ item.link }}">{{ item.name }}</a>
+            </li>
+        {% endfor %}
+    </ul> -->
+
+    <!-- Daftar navigasi statis -->
+    <ul>
+        <li><a href="/" title="">Home</a></li>
+        <li><a href="/about" title="">About</a></li>
+        <li><a href="/blog" title="">Blog</a></li>
+    </ul>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti necessitatibus consectetur, omnis quam incidunt, 
+        nostrum cupiditate perspiciatis nesciunt ea ad nihil sunt! Molestiae cupiditate vitae, quaerat explicabo asperiores eos 
+        minima saepe laborum voluptatibus veniam maxime quis perspiciatis distinctio hic. Voluptates cum temporibus magni est omnis, 
+        ipsum nihil libero, cupiditate quisquam architecto pariatur nemo quidem sint nobis eaque repellendus! Cumque dicta dignissimos 
+        amet repudiandae accusamus beatae facere iusto explicabo sint ratione aut error, sequi repellendus nemo accusantium minima 
+        molestias voluptate architecto velit. Odit in nesciunt libero esse mollitia voluptatum veniam, non unde nam, aperiam laborum nisi! 
+        Corrupti dignissimos aliquam quidem repellat?
+    </p>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {{ judul }}</title>
+</head>
+<body>
+    <img style="width: 1600px; height: 300px;" src="{% static "blog/img/blog.png" %}" alt="">
+    <h1>{{subJudul}}</h1>
+    <p>web ini dibuat dengan menggunakan django</p>
+    <h2>Kontributor : {{kontributor}}</h2>
+    <ul>
+        <li><a href="/" title="">Home  </a></li>
+        <li><a href="/about" title="">About  </a></li>
+        <li><a href="/blog" title="">Blog  </a></li>
+        <ul>
+            <li><a href="/blog/cerita">Cerita</a></li>
+            <li><a href="/blog/news">News</a></li>
+        </ul>
+    </ul>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum consequatur dicta itaque, at eaque perferendis reiciendis neque sunt doloremque. Doloribus odio laboriosam, commodi, debitis ut hic perspiciatis veritatis tempore enim, deleniti eos fugiat quo odit minus quisquam nostrum nisi saepe. Natus dolore deserunt quidem fugit totam iste illo, perferendis, ullam rerum possimus doloribus voluptatibus debitis velit officiis quod animi aliquam, consectetur dignissimos! Deserunt hic molestiae magnam. Molestiae et obcaecati consectetur labore aut eveniet aliquid natus numquam cum. Culpa error expedita in commodi asperiores, unde at inventore recusandae libero aliquid aperiam similique pariatur maxime ipsa reprehenderit deserunt ea fugit eius distinctio.</p>
+</body>
+</html>

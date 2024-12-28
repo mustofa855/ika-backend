@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ judul }}</title>
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static app_css %}">
+</head>
+<body>
+    <div class="container">
+        <!-- <img id="banner" src="{% static banner %}" alt=""> -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid text-white">
+              <a class="navbar-brand" href="#">
+                <img style="height: 30px;" src="{% static 'img/logo.png' %}" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/blog">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <h1>{{ subJudul }} {{ subsubJudul }}</h1>
+        <p>Web ini dibuat dengan menggunakan Django</p>
+        <h2>Kontributor: {{ kontributor }}</h2>
+
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti necessitatibus consectetur, omnis quam incidunt, 
+            nostrum cupiditate perspiciatis nesciunt ea ad nihil sunt! Molestiae cupiditate vitae, quaerat explicabo asperiores eos 
+            minima saepe laborum voluptatibus veniam maxime quis perspiciatis distinctio hic. Voluptates cum temporibus magni est omnis, 
+            ipsum nihil libero, cupiditate quisquam architecto pariatur nemo quidem sint nobis eaque repellendus! Cumque dicta dignissimos 
+            amet repudiandae accusamus beatae facere iusto explicabo sint ratione aut error, sequi repellendus nemo accusantium minima 
+            molestias voluptate architecto velit. Odit in nesciunt libero esse mollitia voluptatum veniam, non unde nam, aperiam laborum nisi! 
+            Corrupti dignissimos aliquam quidem repellat?
+        </p>
+    </div>
+    
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> -->
+   
+    <script src="{% static 'vendor/jquery/jquery.js' %}"></script>
+    <script src="{% static 'vendor/popper/popper.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/bootstrap.js' %}"></script>
+</body>
+</html>

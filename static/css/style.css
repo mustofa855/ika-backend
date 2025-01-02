@@ -1,4 +1,4 @@
-#banner {
+/* #banner {
     width: 1600px; 
     height: 300px;
 }
@@ -18,9 +18,9 @@ nav ul {
 
 nav li {
     float: left
-}
+} */
 
-nav a {
+/* nav a {
     color: white;
     display: block;
     font-family: arial;
@@ -30,4 +30,11 @@ nav a {
 
 nav a:hover{
     background-color:#f00; 
+} */
+
+.jumbotron {
+    background-image:url("/static/img/mainheader.jpg");
+    background-position:center;
+    background-size:cover;
+    height:500px;
 }

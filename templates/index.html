@@ -7,52 +7,76 @@
     <title>{{ judul }}</title>
     <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.css' %}">
     <link rel="stylesheet" href="{% static app_css %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <div class="container">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid text-white">
-                <a class="navbar-brand" href="#">
-                    <img style="height: 30px;" src="{% static 'img/logo.png' %}" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/blog">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <!-- Jumbotron Section -->
-        <div class="jumbotron jumbotron-fluid bg-primary text-white p-5">
-            <div class="container">
-                <h1 class="display-4">{{ subJudul }} {{ subsubJudul }}</h1>
-                <p class="lead">Web ini dibuat dengan menggunakan Django</p>
-                <h2>Kontributor: {{ kontributor }}</h2>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark" id="myNav">
+        <div class="container-fluid text-white">
+            <a class="navbar-brand" href="#">
+                <img style="height: 30px;" src="{% static 'img/logo.png' %}" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
 
-        <!-- Additional Content -->
-        <p>DISINIIIII</p>
+    <!-- Jumbotron Section -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container text-white text-center p-5">
+            <h1 class="display-4">{{ subJudul }} {{ subsubJudul }}</h1>
+            <p class="lead">Web ini dibuat dengan menggunakan Django</p>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container bg-secondary text-dark bg-info" style="margin-top: -100px;" id="myBody">
+            <div class="row" style="height: 400px;">
+                <h1>content1</h1>
+            </div>
+        </div>
+        <div class="container bg-secondary text-dark bg-warning" style="margin-top: -100px;" id="myBody">
+            <div class="row" style="height: 400px;">
+                <h1>content2</h1>
+            </div>
+        </div>
+        <div class="container bg-secondary text-dark bg-danger" style="margin-top: -100px;" id="myBody">
+            <div class="row" style="height: 400px;">
+                <h1>content3</h1>
+            </div>
+        </div>
+        <div class="container bg-secondary text-dark bg-info" style="margin-top: -100px;" id="myBody">
+            <div class="row" style="height: 400px;">
+                <h1>content4</h1>
+            </div>
+        </div>
+        <div class="container bg-secondary text-dark bg-info" style="margin-top: -100px;" id="myBody">
+            <div class="row" style="height: 400px;">
+                <h1>content5</h1>
+            </div>
+        </div>
     </div>
 
     <script src="{% static 'vendor/jquery/jquery.js' %}"></script>
     <script src="{% static 'vendor/popper/popper.js' %}"></script>
     <script src="{% static 'vendor/bootstrap/bootstrap.js' %}"></script>
+    <script src="{% static 'js/scrolling.js' %}"></script>
 </body>
 </html>
